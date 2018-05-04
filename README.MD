@@ -1,5 +1,5 @@
 # who-tried-inviting-me
-Prints out who tried inviting you to a party and when.
+Prints out who sent you a party invite and when.
 
 ---
 
