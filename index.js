@@ -1,8 +1,5 @@
-const Command = require('command');
-
 module.exports = function WhoTriedInvitingMe(dispatch) {
-    const command = Command(dispatch);
-    
+    const command = dispatch.command || dispatch.require.command;
     dispatch.hook('S_BEGIN_THROUGH_ARBITER_CONTRACT', 1, (event) => {
         if (event.type === 4) {
             let timeNow = new Date();
